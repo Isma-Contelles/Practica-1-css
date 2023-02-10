@@ -1,0 +1,61 @@
+body{
+    background-color:lightblue;
+}
+a.nav1:hover{
+    background-color: yellow;
+    color: red;
+}
+a.nav2:hover{
+    background-color: yellow;
+    color: red;
+}
+a.nav3:hover{
+    background-color: yellow;
+    color: red;
+}
+h1.titulo{
+    text-align: center;
+    color: blue;
+    font-weight: 100;
+}
+h1.titulo:first-letter{
+    font-size: 4ch;
+    color: black;
+}
+nav{
+    text-align: center;
+    color: blue;
+}
+nav a:link, a:visited, a:active {
+    text-decoration:none;
+}
+p.l1:first-line{
+    color: red;
+}
+p.l2:first-line{
+    color: red;
+}
+div a[href]{
+    background-color: white;
+    color: blue;
+}
+div a[href="https://www.apple.com/es/"]:visited{
+    background-color: blue;
+    color: white;
+}
+img.img1{
+    text-align: flex;
+    width:350px ;
+    height:350px;
+    float: right;
+}
+h3.tproductos{
+    counter-reset: productos;
+}
+p.productos::before{
+    content: counter(productos)". ";
+    counter-increment: productos 1;
+}
+footer p{
+    font-style: italic;
+}
